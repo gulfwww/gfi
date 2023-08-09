@@ -5794,6 +5794,10 @@ a.btn-hero:nth-child(1) {
   text-align: center;
 }
 
+.custom-p.f-22 {
+  font-size: 22px;
+}
+
 /* Contact */
 .contact-box {
   margin-top: 2.5625rem;
@@ -5849,6 +5853,10 @@ a.btn-hero:nth-child(1) {
   .custom-p {
     font-size: 15px;
     padding-top: 1rem;
+  }
+
+  .custom-p.f-22 {
+    font-size: 15px;
   }
 
   .contact-box .list-unstyled {

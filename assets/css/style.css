@@ -1748,7 +1748,7 @@ main .hero__image-container img {
 .features-container .features {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 4rem;
   position: relative;
 }
@@ -1773,6 +1773,21 @@ main .hero__image-container img {
   max-width: 37rem;
   width: 100%;
 }
+
+.features-container .features__block .ftr-title.content-text {
+  font-family: "Manrope Medium", Arial, sans-serif;
+  color: #666666;
+  font-size: clamp(0.875rem, 0.5rem + 1vw, 1.125rem);
+  line-height: clamp(1.5rem, 1rem + 2vw, 2rem);
+  padding-top: 1.875rem;
+}
+
+.features-container .features__block .ftr-subhead.title-section {
+  font-size: 1.75rem;
+  font-family: "Manrope Semi-Bold", Arial, sans-serif;
+  color: #202942;
+  padding: 0;
+}
 @media (max-width: 74.99875em) {
   .features-container .features__block .ftr-title {
     max-width: 100%;
@@ -1784,6 +1799,28 @@ main .hero__image-container img {
     font-size: 1.375rem;
   }
 }
+
+.features-container .flex-container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2.1875rem;
+  gap: 1rem;
+}
+
+.features-container .flex-img .qr-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.features-container .flex-img img {
+  border-radius: 0.125rem;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 .features-container .features__block .ftr-content {
   max-width: 33.375rem;
   width: 100%;
@@ -1843,6 +1880,11 @@ main .hero__image-container img {
   .features-container .features__cards {
     width: 100%;
     margin-top: -50px;
+  }
+
+  .features-container .flex-img img {
+    width: 85%;
+    height: auto;
   }
 }
 @media (max-width: 37.49875em) {
